@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://api-ssps.cajthaml.eu/file/global/css/reset_ld9mrCCm.css">
+
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;
+
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            background-color: #060930;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .container {
+            display: grid;
+
+            grid-template-columns: repeat(6, minmax(70px, auto));
+            grid-template-rows: repeat(5, 1fr);
+
+            gap: 20px;
+
+            padding: 10px;
+            border-radius: 5px;
+            background-color: #595b83;
+        }
+
+        .item {
+            background-color: #060930;
+            border-radius: 4px;
+            color: white;
+            box-sizing: border-box;
+            width: minmax(40px, auto);
+
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            padding: 10px;
+
+        }
+
+        .display {
+            grid-column: 1 / 7;
+            background-color: #333456;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .double {
+            grid-column-start: 5;
+
+            grid-row-start: 5;
+            grid-row-end: 7;
+
+            font-size: 60px;
+        }
+
+        .big {
+            min-width: 100px;
+        }
+
+        .main {
+            background-color: #3f64a1;
+        }
+
+        .container_mobile {
+            display: none;
+        }
+
+        @media screen and (max-width: 1400px) {
+            /* nothing cause everything cool */
+        }
+
+        @media screen and (max-width: 900px) {
+            .big {
+                min-width: 50px;
+            }
+
+            .item {
+                width: minmax(10px, auto);
+            }
+
+            .container {
+
+                display: grid;
+                grid-template-columns: repeat(6, minmax(50px, auto));
+                grid-template-rows: repeat(5, 1fr);
+
+                gap: 10px;
+
+                padding: 10px;
+                border-radius: 5px;
+                background-color: #595b83;
+            }
+
+        }
+
+        @media screen and (max-width: 360px) {
+            .big {
+                min-width: 60px;
+            }
+
+            .item {
+                width: minmax(20px, auto);
+            }
+
+            .double {
+                grid-column-start: 4;
+
+                grid-row-start: 8;
+                grid-row-end: 10;
+
+                font-size: 50px;
+            }
+
+            .display {
+                grid-column: 1 / 5;
+                background-color: #333456;
+                display: flex;
+                justify-content: flex-end;
+            }
+
+            .container {
+                display: none;
+            }
+
+            .container_mobile {
+                background-color: #595b83;
+
+                display: grid;
+                grid-template-columns: repeat(4, minmax(40px, auto));
+                grid-template-rows: repeat(8, 1fr);
+
+                gap: 10px;
+
+                padding: 10px;
+                border-radius: 5px;
+
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+
+        <div class="item display">120 + 78</div>
+
+        <div class="item big">M/EX</div>
+
+        <div class="item">M+</div>
+        <div class="item">M-</div>
+        <div class="item">MC</div>
+
+        <div class="item big">MR</div>
+        <div class="item big">GT</div>
+        <div class="item">AC</div>
+
+        <div class="item main">7</div>
+        <div class="item main">8</div>
+        <div class="item main">9</div>
+
+        <div class="item">%</div>
+        <div class="item">√</div>
+        <div class="item">&#177;</div>
+
+        <div class="item main">4</div>
+        <div class="item main">5</div>
+        <div class="item main">6</div>
+
+        <div class="item">&#215;</div>
+        <div class="item">÷</div>
+        <div class="item">➤</div>
+
+        <div class="item main">1</div>
+        <div class="item main">2</div>
+        <div class="item main">3</div>
+
+        <div class="item double">+</div>
+        <div class="item">-</div>
+        <div class="item">C</div>
+
+        <div class="item main">0</div>
+        <div class="item main">00</div>
+        <div class="item main">,</div>
+        <div class="item">=</div>
+
+    </div>
+
+    <div class="container_mobile">
+
+
+        <div class="item display">120 + 78</div>
+
+        <div class="item big">M/EX</div>
+
+        <div class="item">M+</div>
+        <div class="item">M-</div>
+        <div class="item">MC</div>
+
+        <div class="item big">MR</div>
+        <div class="item big">GT</div>
+        <div class="item">AC</div>
+        <div class="item">√</div>
+
+        
+        <div class="item">&#215;</div>
+        <div class="item">÷</div>
+        <div class="item">➤</div>
+
+        <div class="item">%</div>
+        
+        
+        <div class="item main">7</div>
+        <div class="item main">8</div>
+        <div class="item main">9</div>
+        
+
+        <div class="item">&#177;</div>
+
+        
+        <div class="item main">4</div>
+        <div class="item main">5</div>
+        <div class="item main">6</div>
+        <div class="item">C</div>
+
+        <div class="item main">1</div>
+        <div class="item main">2</div>
+        <div class="item main">3</div>
+
+        <div class="item double">+</div>
+        <div class="item">-</div>
+        
+
+        <div class="item main">0</div>
+        <div class="item main">00</div>
+        <div class="item main">,</div>
+        <div class="item">x^ 2</div>
+        <div class="item">DEL</div>
+        <div class="item">=</div>
+
+    </div>
+
+</body>
+
+</html>
