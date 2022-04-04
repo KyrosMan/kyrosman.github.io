@@ -6,7 +6,7 @@ main{
     box-sizing: border-box;
 }
 /* #393E46 5e656f */
-main > h1{
+main > h1, #feature{
     background-color: #eeeeee;
     color: #393E46;
     margin: 0px;
