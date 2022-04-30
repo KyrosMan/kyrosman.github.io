@@ -71,6 +71,7 @@ main{
 
     font-size: 20px;
     font-family: 'Roboto', sans-serif;
+    color: #EEEEEE;
 
     padding: 15px 0px;
 }
@@ -170,9 +171,9 @@ h1{
         align-items: center;
     }
 
-    .image{
+     .image{
         width: 100vw;
-        min-height: 50vh;
+        height: 400px;
         background-position: top;
     }
     
@@ -181,6 +182,8 @@ h1{
         justify-content: space-around;
         gap: 50px;
         padding-bottom: 50px;
+
+        height: 700px;
     }
 
     .about-me-text{
